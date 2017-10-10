@@ -6,3 +6,11 @@ card {
     height: 150px;
     margin: 20px;
 }
+#deal {
+    background-color: rgb(50, 50, 192);
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(254, 254, 255)
+    
+}
