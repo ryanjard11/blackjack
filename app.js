@@ -1,9 +1,58 @@
 (function () {
 
-	let deck = [];
+	var dealBtn = document.getElementById('deal');
+	var hitBtn = document.getElementById('hit');
+	var standBtn = document.getElementById('again');
+	var playerCardsdiv = document.getElementById('playerCardsDiv');
+	var dealerCardsdiv = document.getElementById('dealerCardsDiv');
 
+
+	let deck = [];
+	let dealer = [];
 	let dealer = [];
 	let player = [];
+	let dealerPoints = 0;
+	let playerPoints = 0;
+
+	dealBtn.addEventListener('click', function)
+
+	function deal() {
+		
+		deck = shuffle();
+
+		player.push(deck.shift());
+		dealer.push(deck.shift());
+		player.push(deck.shift());
+		dealer.push(deck.shift());
+
+		showCardsOnTable(playerCardsdiv, player[0], true);
+		showCardsOnTable(playerCardsdiv, dealer[1], true);
+		showCardsOnTable(playerCardsdiv, player[0], true);
+		showCardsOnTable(playerCardsdiv, dealer[1], false);
+
+		playerPoints = getHandValue(player);
+		dealerPoints = getHandValue(dealer);
+
+		console.log('player: ', playerPoints);
+		console.log('dealer: ', dealerPoints);
+
+		if (dealerPoints === 21 || playerPoints === 21) {
+			showWinner();
+		}
+		dealBtn.classList.add('hidden');
+		hitBtn.classList.remove('hidden');
+		standBtn.classList.remove('hidden');
+
+	}
+	function showCardsOnTable(div, card, isFaceUp) {
+		var cardImage = document.createElement('img');
+		if (isFaceUp) {
+			cardImage.src
+		}
+		cardImage.src = 'img/' + card + '.png';
+		cardImage.classList.add('card');
+		div.appendChild()
+	}
 
 	function shuffle() {
 
