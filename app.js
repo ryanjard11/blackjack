@@ -73,9 +73,12 @@
 			}
 
 		}
-
-		function getHandValue(hand)
 	}
+
+	function getHandValue(hand) {
+
+	}
+
 	function showCardsOnTable(div, card, isFaceUp) {
 		var cardImage = document.createElement('img');
 		if (isFaceUp) {
