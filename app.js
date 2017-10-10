@@ -14,10 +14,20 @@
 	let dealerPoints = 0;
 	let playerPoints = 0;
 
-	dealBtn.addEventListener('click', function)
+	dealBtn.addEventListener('click', function(){
+		deal();
+	})
+
+	hitBtn.addEventListener('click', function(){
+		hit();
+	})
+
+	standBtn.addEventListener('click', function(){
+		stand();
+	})
 
 	function deal() {
-		
+
 		deck = shuffle();
 
 		player.push(deck.shift());
