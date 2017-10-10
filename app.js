@@ -54,6 +54,10 @@
 
 	}
 
+	function getCardValue() {
+		switch 
+	}
+
 	function showWinner() {
 		winnerDiv.classList.remove('hidden');
 
