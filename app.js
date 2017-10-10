@@ -9,20 +9,19 @@
 
 	let deck = [];
 	let dealer = [];
-	let dealer = [];
 	let player = [];
 	let dealerPoints = 0;
 	let playerPoints = 0;
 
-	dealBtn.addEventListener('click', function(){
+	dealBtn.addEventListener('click', function () {
 		deal();
 	})
 
-	hitBtn.addEventListener('click', function(){
+	hitBtn.addEventListener('click', function () {
 		hit();
 	})
 
-	standBtn.addEventListener('click', function(){
+	standBtn.addEventListener('click', function () {
 		stand();
 	})
 
@@ -53,6 +52,29 @@
 		hitBtn.classList.remove('hidden');
 		standBtn.classList.remove('hidden');
 
+	}
+
+	function showWinner() {
+		winnerDiv.classList.remove('hidden');
+
+		if (dealerPoints === playerPoints) {
+			winnerDiv.innerText = 'Its a Push';
+			winnerDiv.classList.add('alert-warning');
+		}
+
+		if (dealerPoints > playerPoints) {
+			if (dealerPoints > 21) {
+				winnerDiv.innerText = 'Player wins';
+				winnerDiv.classList.add('alert-warning');
+			}
+			else {
+				winnerDiv.innerText = 'Dealer wins';
+				winnerDiv.classList.add('alert-danger');
+			}
+
+		}
+
+		function getHandValue(hand)
 	}
 	function showCardsOnTable(div, card, isFaceUp) {
 		var cardImage = document.createElement('img');
