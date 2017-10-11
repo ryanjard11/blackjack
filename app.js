@@ -92,10 +92,8 @@
 	}
 
 	function playAgain(){
-		
+
 	}
-
-
 
 	function showCardsOnTable(div, card, isFaceUp) {
 		var cardImage = document.createElement('img');
