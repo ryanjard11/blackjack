@@ -54,8 +54,20 @@
 
 	}
 
+	function hit(){
+
+	}
+
+	function stand(){
+
+	}
+
+	function getHandValue(hand) {
+		
+			}
+
 	function getCardValue() {
-		switch 
+		
 	}
 
 	function showWinner() {
@@ -79,9 +91,11 @@
 		}
 	}
 
-	function getHandValue(hand) {
-
+	function playAgain(){
+		
 	}
+
+
 
 	function showCardsOnTable(div, card, isFaceUp) {
 		var cardImage = document.createElement('img');
