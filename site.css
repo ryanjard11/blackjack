@@ -1,4 +1,8 @@
 body {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
     margin: 60px;
 }
 
@@ -11,6 +15,5 @@ card {
     border: none;
     height: 40px;
     border-radius: 10px;
-    color: rgb(254, 254, 255)
-    
+    color: rgb(254, 254, 255) 
 }
