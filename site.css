@@ -5,14 +5,11 @@ body {
     background-position: center;
     margin: 60px;
 }
-
 .row1{
     padding: 10px 24px;
     cursor: pointer;
     float: left; 
 }
-
-
 #card {
     background: transparent;
     border: none;
@@ -24,11 +21,4 @@ body {
 #stand {
     background: transparent;
     border: none;
-}
-#deal {
-    background-color: rgb(50, 50, 192);
-    border: none;
-    height: 40px;
-    border-radius: 10px;
-    color: rgb(254, 254, 255) 
 }
