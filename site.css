@@ -1,14 +1,15 @@
+
 body {
     background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    
     margin: 60px;
 }
 
-card {
-    height: 150px;
-    margin: 20px;
+
+#card {
+    background: transparent;
+    border: none;
 }
 #deal {
     background-color: rgb(50, 50, 192);
